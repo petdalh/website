@@ -44,12 +44,12 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="h-screen flex flex-col items-center justify-center">
-        <h1 className="text-center text-3xl mb-20 font-bold">Mine prosjekter</h1>
-        <div className="h-5"></div>
+      <div className="h-screen flex flex-col items-center justify-center bg-black">
+        <h1 className="text-center text-3xl mb-20 font-bold text-white">Mine prosjekter</h1>
+        <div className="h-20"></div>
         <ProjectCarousel></ProjectCarousel>
       </div>
-
+      <div className="h-20 bg-black"></div>
     </>
   );
 };
