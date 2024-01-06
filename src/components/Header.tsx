@@ -2,16 +2,11 @@ import React from 'react';
 import circle from '../assets/img/circle.png';
 
 const Header: React.FC = () => {
-  const headerStyle = {
-    fontSize: '1.6em',
-  };
-
   return (
     <header 
-      style={headerStyle}
-      className="flex items-center justify-center space-x-[50%] mx-auto fixed top-5 left-0 w-full"
+      className="flex items-center justify-center space-x-[50%] mx-auto fixed top-0 left-0 w-full mb-12 mt-0 h-20 bg-white"
     >
-      <h1>Petter Dalhaug</h1>
+      <h1 className="text-4xl mb-4">Petter Dalhaug</h1>
       <img src={circle} alt="circle" className="w-8"></img>
     </header>
   );

@@ -5,9 +5,11 @@ export default {
     // Include any other paths that may contain Tailwind CSS classes
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customGray: '#A9A9A9',
+      },
+    },
   },
   plugins: [],
 }
-
-
