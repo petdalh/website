@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
         <div className="w-1/2 bg-white">
           <div className="flex justify-between mt-10">
             <div className="mr-10">
-              <h1 className="text-black text-3xl mb-4">Om meg</h1>
+              <h1 className="text-black text-3xl mb-4 font-bold">Om meg</h1>
               <p className="text-black text-xl">
                 {displayedText}
                 <span className="cursor"></span> {/* Cursor Element */}
@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
         </div>
       </div>
       <div className="h-screen flex flex-col items-center justify-center">
-        <h1 className="text-center text-3xl mb-20">Mine prosjekter</h1>
+        <h1 className="text-center text-3xl mb-20 font-bold">Mine prosjekter</h1>
         <div className="h-5"></div>
         <ProjectCarousel></ProjectCarousel>
       </div>
