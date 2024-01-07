@@ -1,0 +1,23 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.fade-in-visible {
+    opacity: 1;
+}
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.half-screen-height {
+    height: 50vh; /* 50% of the viewport height */
+  }
+  
+  

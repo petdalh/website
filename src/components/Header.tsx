@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import linkedInLogo from '../assets/img/linkedin.png';
-import githubLogo from '../assets/img/github.png';
+import linkedInLogo from '../assets/img/social/linkedin.png';
+import githubLogo from '../assets/img/social/github.png';
 
 const Header: React.FC = () => {
   return (
