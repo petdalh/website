@@ -5,7 +5,7 @@ import githubLogo from '../assets/img/social/github.png';
 
 const Header: React.FC = () => {
   return (
-    <header className="z-100 flex justify-center items-center fixed top-0 left-0 w-full h-12 bg-white">
+    <header className="z-10 flex justify-center items-center fixed top-0 left-0 w-full h-12 bg-white">
       <div className="flex justify-between items-center w-3/4">
         <Link to="/">
           <h1 className="text-3xl font-bold">Petter Dalhaug</h1>

@@ -61,13 +61,13 @@ interface ProjectDescriptionProps {
 
     return (
     <div ref={ref} className={`flex ${containerClasses} items-center half-screen-height justify-center fade-in ${isVisible ? 'fade-in-visible' : ''}`}>
-        <div className="w-1/2 flex justify-center px-4">
-          {imageUrls.length > 1 && (
+        <div className="w-3/5 flex justify-center px-4"> {/* Adjusted width */}
+        {imageUrls.length > 1 && (
             <div>
-              <button onClick={prevImage}></button>
-              <button onClick={nextImage}></button>
+            <button onClick={prevImage}></button>
+            <button onClick={nextImage}></button>
             </div>
-          )}
+        )}
             <img 
             src={imageUrls[currentImageIndex]} 
             alt="Project" 
@@ -75,11 +75,12 @@ interface ProjectDescriptionProps {
             onClick={onImageClick} 
             />
         </div>
-        <div className={`w-1/2 flex ${isImageLeft ? 'justify-end' : 'justify-start'}`} style={{ maxWidth: '50%' }}>
-          <p className={`${textAlignmentClasses} w-full px-10 text-xl`}>{text}</p>
+        <div className={`w-2/5 flex ${isImageLeft ? 'justify-end' : 'justify-start'}`} style={{ maxWidth: '40%' }}> {/* Adjusted width */}
+        <p className={`${textAlignmentClasses} w-full px-10 text-xl`}>{text}</p>
         </div>
-      </div>
+    </div>
     );
+
 
 };
 
