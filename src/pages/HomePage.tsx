@@ -10,7 +10,7 @@ import './HomePage.css';
 
 
 const HomePage: React.FC = () => {
-  const fullText = 'Hei, jeg heter Petter, og er en ingeniørstudent på Norges teknisk-naturvitenskapelige universitet. Jeg går spesialiseringen IKT og Marin hvor man fokuserer på kombinasjonen av IKT fag og marin teknologi fag. Jeg har mest fokus på datafag innenfor AI, og er interessert i å jobbe med implementasjon av AI og hvordan man kan bruke dette for å løse praktiske oppgaver'; // Full text to display
+  const fullText = 'Heei, jeg heter Petter, og er en ingeniørstudent på Norges teknisk-naturvitenskapelige universitet. Jeg går spesialiseringen IKT og Marin hvor man fokuserer på kombinasjonen av IKT fag og marin teknologi fag. Jeg har mest fokus på datafag innenfor AI, og er interessert i å jobbe med implementasjon av AI og hvordan man kan bruke dette for å løse praktiske oppgaver.'; 
   const [displayedText, setDisplayedText] = useState('');
   const typingSpeed = 20; // Milliseconds per character
 

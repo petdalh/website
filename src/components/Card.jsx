@@ -2,7 +2,7 @@ import Styles from "./Card.module.css";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
-function Card({ imagen, header, text, technologies }) {
+function Card({ imagen, header, text, technologies, link }) {
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({
@@ -29,9 +29,12 @@ function Card({ imagen, header, text, technologies }) {
           ))}
         </div>
       )}
-      <div className={Styles.btnn}>
-        {/* Additional content can go here */}
-      </div>
+      <button 
+        onClick={() => window.location.href = link} 
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5"
+      >
+        Learn More
+      </button>
     </animated.div>
   );
 }
