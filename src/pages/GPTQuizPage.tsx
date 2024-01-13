@@ -2,7 +2,6 @@ import React from 'react';
 import backgroundImage from '../assets/img/gpt_quiz_page/GPT_background.png';
 import demo1 from '../assets/img/gpt_quiz_page/demo1.gif';
 import demo2 from '../assets/img/gpt_quiz_page/demo1.gif';
-import weatherImage from '../assets/img/ml_page/weather.png';
 import PageLayout from '../components/PageLayout';
 import ProjectDescription from '../components/ProjectDescription'; 
 

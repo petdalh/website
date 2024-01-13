@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import profile from '../assets/img/profile.jpg';
 // @ts-ignore
 import ProjectCarousel from '../components/ProjectCarousel';
-import { v4 as uuidv4 } from "uuid";
 import './HomePage.css'; 
 
 
