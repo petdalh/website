@@ -11,12 +11,12 @@ const MachineLearningPage: React.FC = () => {
   const projectDescriptions = [
     {
       imageUrl: [preprocessingImage, weatherImage],
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      text: 'I dette prosjektet skulle vi predikere energi produksjon var solcellepanel fra 3 ukjente lokasjoner. Dette var en oppgave i faget maskinlæring på NTNU, som hadde en kaggle konkurranse som vurderinsform, og man ble vurdert baser på scoren i konkurransen. I dette prosjektet fikk vi erfart at får å løse noen oppgaver, så må man prøve seg frem mye. Vi hadde 95 submissions, og havnet på 15. plass av 167 lag. ',
       isImageLeft: true,
     },
     {
       imageUrl: [weatherImage],
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      text: 'Modellen som ga oss den beste scoren var en ensamble modell med CatBoost, XGBoost og Autogluon. Vi prøvde ut veldig mange engineered features, man kan se et lite utdrag i bilde over av ulike scripts vi brukte for å lage features utover de eksisterende. Vi forsøkte å få modellene til å kompensere for hverandres feil ved å kombinere dem på en måte som gjør at gjennomsnittsfeilen blir så nær 0 som mulig, og den gjennomsnittlige absolutte feilen blir så lav som mulig for å minimere variansen. For å gjøre dette, prøvde vi å minimere korrelasjonen mellom modellene våre samtidig som vi økte korrelasjonen med målet, og stable disse for å få gjennomsnittsfeilen nær 0. ',
       isImageLeft: false,
     },
   ];

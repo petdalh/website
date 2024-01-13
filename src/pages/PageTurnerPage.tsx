@@ -12,19 +12,19 @@ const PageTurnerPage: React.FC = () => {
   const projectDescriptions = [
     {
       imageUrl: [demo3, demo1],
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      text: 'Page-Turner var et gruppeprosjekt i faget Programvareutvikling på NTNU. Oppgaven vår var å lage en programvare, der man kunne rangere og legge inn reviews på bøker à la IMDB. Vi brukte MERN-stakken (MongoDB, Express, React, NodeJS), jeg jobbe hovedsakelig med API og frontend relaterte oppgaver. Dette gruppeprosjektet var første gang jeg brukte React noe som jeg har fortsatt å bruke i jobbsammenheng og fritidsprosjekter (denne nettsiden f.eks).',
       isImageLeft: true,
     },
     {
       imageUrl: [demo2],
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      text: 'I PageTurner kunne man lage en bruker for å logge inn og bruke programmet. Man kunne legge inn bøker med en beskrivelse av boken. Brukere kunne da rangere bøkene og skrive reviews. Bøkene ble rangert og man hadde en "top 10 books" på hjem siden. Man hadde også dark og light mode som man se forskjellen på i de ulike bildene',
       isImageLeft: false,
     },
   ];
 
   return (
     <div>
-      <PageLayout image={backgroundImage} headerText="Student Guide" />
+      <PageLayout image={backgroundImage} headerText="Page Turner" />
       <div className="py-16">
         {projectDescriptions.map((project, index) => (
           <ProjectDescription

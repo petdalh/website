@@ -12,12 +12,12 @@ const GPTQuizPage: React.FC = () => {
   const projectDescriptions = [
     {
       imageUrl: [demo1],
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      text: 'Lagde dette programmet for å kunne øve til eksamen i ulike fag. Man har muligheten til å legge inn spørsmål med tilsvarende fasit, som gjør det lett å legge inn tidligere eksamenere. Man har menyer der man kan navigere rundt til ulike fag, og ulike temaer innenfor de fagene. ',
       isImageLeft: true,
     },
     {
       imageUrl: [demo2],
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      text: 'GPT-API blir brukt til å sammenligne brukerens fag med fasiten gitt. Dette gir brukeren tilbakemelding på svaret raskt. All dataene er for tiden hardkodet, vil senere bruke en databaseløsning hvis jeg får tid.',
       isImageLeft: false,
     },
   ];

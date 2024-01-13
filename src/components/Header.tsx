@@ -5,8 +5,10 @@ import githubLogo from '../assets/img/social/github.png';
 
 const Header: React.FC = () => {
   return (
-    <header className="z-10 flex justify-center items-center fixed top-0 left-0 w-full h-12 bg-white">
-      <div className="flex justify-between items-center w-3/4">
+    // Add shadow and rounded corners classes to the header
+    <header className="z-10 flex justify-center items-center fixed top-0 left-0 w-full h-12 bg-white shadow-lg rounded-lg">
+      {/* Change width to 3/4 and add margin auto to center the div */}
+      <div className="flex justify-between items-center w-3/4 mx-auto">
         <Link to="/">
           <h1 className="text-3xl font-bold">Petter Dalhaug</h1>
         </Link>
