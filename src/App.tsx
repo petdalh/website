@@ -6,10 +6,23 @@ import GPTQuizPage from "./pages/GPTQuizPage"
 import StudentGuidePage from './pages/StudentGuidePage';
 import FernPage from './pages/FernPage';
 import PageTurnerPage from './pages/PageTurnerPage';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
-    <Router basename='/'> {/* No need for /website/ here, the base in vite.config.js handles this */}
+    <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
