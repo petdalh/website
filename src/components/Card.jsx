@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 
 function Card({ imagen, header, text, technologies, link }) {
   const [show, setShown] = useState(false);
+  const navigate = useNavigate(); 
+
 
   const props3 = useSpring({
     transform: show ? "scale(1.1)" : "scale(1)",
