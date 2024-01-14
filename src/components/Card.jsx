@@ -1,6 +1,8 @@
 import Styles from "./Card.module.css";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
+import { useNavigate } from 'react-router-dom';
+
 
 function Card({ imagen, header, text, technologies, link }) {
   const [show, setShown] = useState(false);
@@ -30,7 +32,7 @@ function Card({ imagen, header, text, technologies, link }) {
         </div>
       )}
       <button 
-        onClick={() => window.location.href = link} 
+        onClick={() => navigate(link)} // 'link' should be your route, e.g., '/Fern'
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5"
       >
         Learn More
