@@ -20,7 +20,7 @@ function ProjectCarousel() {
           header="Fern"
           text="Gjennom jobben min i Addwize så bidro jeg til utviklingen av PLM-programvare, med fokus på backend-arbeid og integrering av Fusion 360 ved bruk av Prisma, TypeScript, Express og Fusion 360 Python API. Dette prosjektet har gitt meg mulighet til å sammerbeide med utviklere med flere års arbeidserfaring, noe som har vært veldig givende"
           technologies={["Prisma", "TypeScript", "React", "Python", "Node", "Fusion 360 API"]}
-          link="/Fern"
+          link="Fern"
         />
       )
     },
@@ -32,7 +32,7 @@ function ProjectCarousel() {
           header="Page Turner"
           text="Gruppeprosjekt i faget programvareutvikling (TDT4140). Fikk som oppgave å lage en imdb.com ratingside for bøker. Vi brukte MERN-stacken for å utvikle programvaren. Her fikk jeg mye erfaring innenfor git, og jeg fikk erfare det å jobbe på et gruppeprosjekt med mennesker jeg ikke kjente fra før. Det var mye fokus på agile metodikk."
           technologies={["MongoDB", "Javascript", "Express", "Node", "React"]}
-          link="/Page_Turner"
+          link="Page_Turner"
         />
       )
     },
@@ -45,7 +45,7 @@ function ProjectCarousel() {
           text="Inneholder arbeidet for TDT4173 Maskinlæring-kurset ved NTNU Trondheim. Prosjektet er en del av en konkurranse fokusert på å forutsi solenergiproduksjon. Målet er å forutsi timevis solenergiproduksjon for neste dag.
           Datasettet som ble brukt i dette prosjektet ble levert av Aneo. Vårt lag kom på 16. plass av over 100 lag i konkurransen."
           technologies={["Python", "Scikit-learn", "Pandas", "Numpy", "Autogluon"]}
-          link="/machine_learning"
+          link="machine_learning"
         />
       )
     },
