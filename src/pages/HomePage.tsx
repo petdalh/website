@@ -9,23 +9,21 @@ import './HomePage.css';
 
 
 const HomePage: React.FC = () => {
-  const fullText = 'Heei, jeg heter Petter, og er en ingeniørstudent på Norges teknisk-naturvitenskapelige universitet. Jeg går spesialiseringen IKT og Marin hvor man fokuserer på kombinasjonen av IKT fag og marin teknologi fag. Jeg har mest fokus på datafag innenfor AI, og er interessert i å jobbe med implementasjon av AI og hvordan man kan bruke dette for å løse praktiske oppgaver.'; 
+  const fullText = 'Hei, jeg heter Petter, og er en ingeniørstudent på Norges teknisk-naturvitenskapelige universitet. Jeg går spesialiseringen IKT og Marin hvor man fokuserer på kombinasjonen av IKT fag og marin teknologi fag. Jeg har mest fokus på datafag innenfor AI, og er interessert i å jobbe med implementasjon av AI og hvordan man kan bruke det til å løse praktiske oppgaver.'; 
   const [displayedText, setDisplayedText] = useState('');
-  const typingSpeed = 20; // Milliseconds per character
+  const [index, setIndex] = useState(0);
+  const typingSpeed = 30;
 
   useEffect(() => {
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index < fullText.length) {
-        setDisplayedText((prev) => prev + fullText.charAt(index));
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, typingSpeed);
+    if (index < fullText.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText(displayedText + fullText.charAt(index));
+        setIndex(index + 1);
+      }, typingSpeed);
 
-    return () => clearInterval(interval);
-  }, []);
+      return () => clearTimeout(timeout);
+    }
+  }, [index, displayedText]);
 
   return (
     <>
