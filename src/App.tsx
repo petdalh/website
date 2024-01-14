@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import MachineLearningPage from "./pages/MachineLearningPage"
@@ -9,15 +9,15 @@ import PageTurnerPage from './pages/PageTurnerPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/'> {/* No need for /website/ here, the base in vite.config.js handles this */}
       <Layout>
         <Routes>
-          <Route path="/website/" element={<HomePage />} />
-          <Route path="/website/machine_learning" element={<MachineLearningPage />} />
-          <Route path="/website/GPT_quiz" element={<GPTQuizPage />} />
-          <Route path="/website/student_guide" element={<StudentGuidePage />} />
-          <Route path="/website/Fern" element={<FernPage />} />
-          <Route path="/website/Page_Turner" element={<PageTurnerPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/machine_learning" element={<MachineLearningPage />} />
+          <Route path="/GPT_quiz" element={<GPTQuizPage />} />
+          <Route path="/student_guide" element={<StudentGuidePage />} />
+          <Route path="/Fern" element={<FernPage />} />
+          <Route path="/Page_Turner" element={<PageTurnerPage />} />
         </Routes>
       </Layout>
     </Router>
