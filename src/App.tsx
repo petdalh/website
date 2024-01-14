@@ -12,12 +12,12 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/machine_learning" element={<MachineLearningPage />} />
-          <Route path="/GPT_quiz" element={<GPTQuizPage />} />
-          <Route path="/student_guide" element={<StudentGuidePage />} />
-          <Route path="/Fern" element={<FernPage />} />
-          <Route path="/Page_Turner" element={<PageTurnerPage />} />
+          <Route path="/website/" element={<HomePage />} />
+          <Route path="/website/machine_learning" element={<MachineLearningPage />} />
+          <Route path="/website/GPT_quiz" element={<GPTQuizPage />} />
+          <Route path="/website/student_guide" element={<StudentGuidePage />} />
+          <Route path="/website/Fern" element={<FernPage />} />
+          <Route path="/website/Page_Turner" element={<PageTurnerPage />} />
         </Routes>
       </Layout>
     </Router>
