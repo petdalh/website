@@ -6,6 +6,7 @@ import GPTQuizPage from "./pages/GPTQuizPage"
 import StudentGuidePage from './pages/StudentGuidePage';
 import FernPage from './pages/FernPage';
 import PageTurnerPage from './pages/PageTurnerPage';
+import NeuralNetworkPage from './pages/NeuralNetworkPage';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/student_guide" element={<StudentGuidePage />} />
           <Route path="/Fern" element={<FernPage />} />
           <Route path="/Page_Turner" element={<PageTurnerPage />} />
+          <Route path="/Neural_Network" element={<NeuralNetworkPage />} />
         </Routes>
       </Layout>
     </Router>

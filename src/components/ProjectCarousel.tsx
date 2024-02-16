@@ -9,6 +9,7 @@ import Page_Turner from "../assets/img/PageTurner.png"
 import machine_learning from "../assets/img/machine_learning.png"
 import student_guide from "../assets/img/student_guide.png"
 import gpt_quiz from "../assets/img/GPT-quiz.png"
+import neural_network from "../assets/img/neural_network.png"
 
 function ProjectCarousel() {
   let cards = [
@@ -33,6 +34,18 @@ function ProjectCarousel() {
           text="Gruppeprosjekt i faget programvareutvikling (TDT4140). Fikk som oppgave å lage en imdb.com ratingside for bøker. Vi brukte MERN-stacken for å utvikle programvaren. Her fikk jeg mye erfaring innenfor git, og jeg fikk erfare det å jobbe på et gruppeprosjekt med mennesker jeg ikke kjente fra før. Det var mye fokus på agile metodikk."
           technologies={["MongoDB", "Javascript", "Express", "Node", "React"]}
           link="Page_Turner"
+        />
+      )
+    },
+    {
+      key: uuidv4(),
+      content: (
+        <Card 
+          imagen={neural_network}
+          header="Neural Network"
+          text="Individuelt prosjekt i emnet Dyp Læring (IT3030) hvor jeg utviklet et nevralt nettverk med Python, med numpy bibliotek. Jeg utviklet også en bildegenerator for klassifiseringsformål."
+          technologies={["Python", "Numpy"]}
+          link="Neural_Network"
         />
       )
     },
@@ -77,8 +90,8 @@ function ProjectCarousel() {
   return (
       <Carousel
         cards={cards}
-        height="500px"
-        width="100%"
+        height="450px"
+        width="80%"
         margin="0 auto"
         offset={3}
         showArrows={false}
